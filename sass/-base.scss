@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+$color-blue-primary: #047aed;  
+$color-blue-secondary: #1c3fa8;  
+$color-blue-darker: #002240;  
+$color-white-light: #f1f1f1;  
+$color-white: #fff;
+$color-input: #b4becb;
+$color-success:#5cb85c;
+$color-error:#d9534f;  
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato' , 'sans-serif';
+    color: #333;
+    line-height: 1.6;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+h1
+,h2 {
+    font-weight: 300;
+    line-height: 1.2;
+    margin: 10px 0;
+}
+
+p {
+    margin: 10px 0;
+    font-weight: 300;
+}
+
+img {
+    width: 100%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+// backgoround & colored buttons 
+
+.bg-primary, .btn-primary {
+    background-color: $color-blue-primary;
+    color: #fff;
+}
+
+.bg-secondary, .btn-secondary {
+    background-color: $color-blue-secondary;
+    color: #fff;
+}
+
+.bg-darker, .btn-darker {
+    background-color: $color-blue-darker;
+    color: #fff;
+    
+}
+
+.bg-light, .btn-light {
+    background-color: $color-white-light;
+    color: #333;
+}
+
+//Alert
+.alert {
+    background-color: $color-white-light;
+    padding: 10px 20px;
+    font-weight: bold;
+    margin: 15px 0;
+    & i {
+        margin-right: 10px;
+        color: rgb(247, 217, 47);
+    }
+}
+.alert-success {
+    background-color:$color-success ;
+    color: #fff;
+}
+
+//text decoration
+
+.text-primary {
+    color: #1c3fa8  !important;
+}
+
+.lead {
+    font-size: 20px;
+}
+// text sizes
+.sm {
+    font-size: 1rem;
+}
+
+.md {
+    font-size: 2rem;
+}
+
+.lg {
+    font-size: 3rem;
+}
+
+.xl {
+    font-size: 4rem;
+}
+
+
+// Margin
+
+.my-1 {
+    margin: 1rem 0;
+}
+
+.my-2 {
+    margin: 1.5rem 0;
+}
+
+.my-3 {
+    margin: 2rem 0;
+}
+
+.my-4 {
+    margin: 3rem 0;
+}
+
+.my-5 {
+    margin: 4rem 0;
+}
+
+.mx-1 {
+    margin: 0 1rem;
+}
+
+.mx-2 {
+    margin: 0 1.5rem;
+}
+
+.mx-3 {
+    margin: 0 2rem;
+}
+
+.mx-4 {
+    margin: 0 3rem;
+}
+
+.mx-5 {
+    margin: 0 4rem;
+}
+
+
+.m-1 {
+    margin: 1rem ;
+}
+
+.m-2 {
+    margin: 1.5rem ;
+}
+
+.m-3 {
+    margin: 2rem ;
+}
+
+.m-4 {
+    margin: 3rem ;
+}
+
+.m-5 {
+    margin: 4rem ;
+}
+
+//Pading 
+
+.py-1 {
+    padding: 1rem 0;
+}
+
+.py-2 {
+    padding: 1.5rem 0;
+}
+
+.py-3 {
+    padding: 2rem 0;
+}
+
+.py-4 {
+    padding: 3rem 0;
+}
+
+.py-5 {
+    padding: 4rem 0;
+}
+
+.p-1 {
+    padding: 1rem ;
+}
+
+.p-2 {
+    padding: 1.5rem ;
+}
+
+.p-3 {
+    padding: 2rem ;
+}
+
+.p-4 {
+    padding: 3rem ;
+}
+
+.p-5 {
+    padding: 4rem ;
+}

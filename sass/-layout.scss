@@ -1,0 +1,267 @@
+// Navbar //
+
+.navbar {
+    background-color: $color-blue-primary;
+    color: $color-white;
+    height: 70px;
+    
+    & ul {
+        display: flex;
+    }
+
+    & a {
+        color:$color-white ;
+        padding: 20px;
+        margin: 0 5px;
+        
+        
+        
+
+        &:hover {
+            border-bottom: 2px #fff solid;
+            
+            
+        }
+    }
+
+    
+    
+}
+
+.navbar .flex {
+    justify-content: space-between;
+}
+
+
+// Show Case //
+
+.showcase {
+    height: 400px;
+    background-color: $color-blue-primary;
+    color: $color-white;
+    position: relative;
+    
+    
+    & h1 {
+        font-size: 40px;
+        font-weight: 400;
+    }
+    & p {
+        margin: 20px 0;
+        font-weight: 400;
+    }
+    & .grid {
+        grid-template-columns: 55% 45%;
+        gap: 30px;
+        overflow: visible;
+    }
+    
+    
+    
+}
+//clip back ground
+.showcase::before,
+.showcase::after {
+    content: '';
+    position: absolute;
+    height: 100px;
+    bottom: -55px;
+    right: 0;
+    left: 0;
+    background: #fff;
+    transform: skewY(-3deg);
+    -webkit-transform: skewY(-3deg);
+    -moz-transform: skewY(-3deg);
+    -ms-transform: skewY(-3deg);
+}
+
+
+
+
+
+// Utilities //
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    overflow: auto; // to ger rid of the margin of h1 //
+    padding: 0 40px;
+    
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap:20px ;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+
+.grid-3 {
+    grid-template-columns: 1fr 1fr 1fr;
+}    
+
+
+//stats
+
+.stats {
+    padding-top: 100px;
+
+    & .stats-heading {
+        
+        align-items: center;
+        justify-content: center;
+        max-width: 500px;
+        margin: auto;
+        
+        color: rgba(51, 51, 51, 0.877);
+        padding: 20px;
+        border: rgb(34, 39, 39);
+    }
+
+    & .grid {
+
+        & h3{
+            font-size: 50px;
+            font-weight: 300;
+            
+
+        }
+        & p{
+            font-family: 20px;
+            font-weight: bold;
+        }
+    }
+}
+
+
+
+// CLI
+
+.cli {
+
+    & .grid {
+        grid-template-columns: repeat(3 ,1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+    & .cli-img {
+        grid-column: 1 / span 2;
+        grid-row: 1 / span 2;
+    }
+}
+
+// Cloud 
+.cloud {
+
+    & .grid {
+        grid-template-columns: 4fr 3fr;
+    }
+}
+
+// Languages
+
+.languages{
+
+    & .card {
+    text-align: center;
+    margin: 70px 33px  ;
+    transition: transform 0.3s ease-in;
+    & h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    }
+    }
+
+    & .card:hover {
+        transform: translateY(-15px);
+    }
+    & .flex {
+        flex-wrap: wrap;
+    }
+}
+
+//footer
+
+.footer {
+    & .social{
+        & a {
+            margin: 0 10px;
+        }
+    }
+}
+
+//Features
+
+.features-head,
+.docs-head,
+.features-sub-head {
+
+    & img {
+        width: 250px;
+        justify-self: center;
+    }
+}
+
+.features-main {
+
+    & .card > i {
+        margin-right: 20px;
+    }
+    & .grid {
+        padding: 30px;
+
+        &  :first-child {
+            grid-column: 1 / span 3;
+        }
+        &  :nth-child(2) {
+            grid-column: 1 / span 2;
+        }
+    }
+}
+
+//docs 
+
+.docs-main {
+
+    & .card:first-child {
+        background-color: $color-white-light;
+        & a {
+            color: #333;
+            transition-duration: .3s;
+            &:hover {
+                font-weight: bold;
+                color: $color-blue-primary;
+            }
+        }
+    }
+    & h3 {
+        margin: 20px 0;
+    }
+    & .grid {
+        grid-template-columns: 1fr 2fr;
+        align-items: flex-start;
+    }
+    & nav {
+        & li {
+            font-size: 17px;
+            padding-bottom:5px ;
+            margin-bottom:5px ;
+            border-bottom: 1px solid #ccc;
+        }
+    }
+    & code,pre {
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+    }
+}
